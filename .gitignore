@@ -1,0 +1,9 @@
+*.iml
+*.git
+.git/
+.idea/
+out/
+bin/
+.settings/
+*.project
+*.classpath
