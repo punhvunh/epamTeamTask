@@ -1,4 +1,4 @@
-package com.epam.text.dao;
+package com.epam.travel.dao;
 
 public class DAOException extends Exception {
     public DAOException() {

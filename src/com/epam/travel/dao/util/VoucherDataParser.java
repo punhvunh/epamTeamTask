@@ -1,20 +1,21 @@
-package com.epam.text.dao.util;
+package com.epam.travel.dao.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AccessoryDataParser {
+public class VoucherDataParser {
+    
     private static final String REGEX = ".+?(\\d+\\.\\d+).+?(\\d+\\.\\d+).+?: (\\w+).+?: (\\w+).+?: (\\w+)";
 
-    private static final AccessoryDataParser instance = new AccessoryDataParser();
+    private static final VoucherDataParser instance = new VoucherDataParser();
 
     private Pattern pattern = Pattern.compile(REGEX);
     private Matcher matcher;
 
-    private AccessoryDataParser() {
+    private VoucherDataParser() {
     }
 
-    public static AccessoryDataParser getInstance() {
+    public static VoucherDataParser getInstance() {
         return instance;
     }
 
